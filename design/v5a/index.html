@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tiger Auto Parts · Tuning-onderdelen die passen</title>
+  <meta name="description" content="Tuning- en vervangonderdelen voor BMW, MINI, Porsche, Volkswagen en Mercedes. Meer dan 10.000 onderdelen op voorraad in Gent. Vandaag besteld, vandaag verzonden.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/v3/bmw-m4-garage.webp" as="image">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Naar inhoud</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <a class="nav__logo" href="#" aria-label="Tiger Auto Parts, home">
+      <img src="assets/img/logo-light.webp" alt="Tiger Auto Parts" width="652" height="312">
+    </a>
+    <nav class="nav__links" aria-label="Hoofdmenu">
+      <a href="#generaties">Onderdelen</a>
+      <a href="#magazijn">Magazijn</a>
+      <a href="#acties">Acties</a>
+      <a href="#gent">Toonbank</a>
+    </nav>
+    <div class="nav__tools">
+      <button class="nav__icon" type="button" aria-label="Zoeken" data-search-open>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+      </button>
+      <a class="nav__text" href="#b2b">B2B login</a>
+      <a class="nav__icon nav__cart" href="#" aria-label="Winkelwagen, 0 artikelen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.2 12H5.2z"/><path d="M8.5 8V6.5a3.5 3.5 0 0 1 7 0V8"/></svg>
+      </a>
+      <button class="nav__burger" type="button" aria-label="Menu openen" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" data-menu hidden>
+    <nav class="menu__links" aria-label="Mobiel menu">
+      <a href="#generaties"><span>01</span>Onderdelen</a>
+      <a href="#magazijn"><span>02</span>Magazijn</a>
+      <a href="#acties"><span>03</span>Acties</a>
+      <a href="#gent"><span>04</span>Toonbank Gent</a>
+      <a href="#b2b"><span>05</span>B2B login</a>
+    </nav>
+    <p class="menu__foot">Kleimoer 1B, 9030 Gent<br><a href="tel:+32470180772">+32 470 18 07 72</a></p>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-hero>
+      <div class="hero__media">
+        <picture>
+          <source srcset="assets/img/v3/bmw-m4-garage.webp" type="image/webp">
+          <img src="assets/img/v3/bmw-m4-garage.jpg" alt="" data-hero-img>
+        </picture>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+
+      <div class="hero__top wrap">
+        <p class="label" data-hero-fade>Tuning &amp; vervangonderdelen</p>
+        <p class="label hero__loc" data-hero-fade><span class="dot" aria-hidden="true"></span>Toonbank open tot 17:00 &middot; Gent</p>
+      </div>
+
+      <div class="hero__body wrap">
+        <h1 class="display hero__title">
+          <span class="line"><span>Onderdelen</span></span>
+          <span class="line"><span>die passen</span></span>
+        </h1>
+        <p class="hero__sub" data-hero-fade>Bodykits, verlichting en interieur voor BMW, MINI, Porsche, Volkswagen en Mercedes. Meer dan 10.000 stuks op voorraad, vandaag besteld is vandaag verzonden.</p>
+      </div>
+
+      <!-- Finder: a sentence, not a form -->
+      <form class="finder wrap" data-finder data-hero-fade action="#" onsubmit="return false">
+        <div class="finder__bar">
+          <div class="finder__tabs" role="tablist" aria-label="Zoekmethode">
+            <button type="button" role="tab" aria-selected="true" data-tab="car">Op wagen</button>
+            <button type="button" role="tab" aria-selected="false" data-tab="nr">Op nummer</button>
+          </div>
+
+          <div class="finder__sentence" data-panel="car">
+            <span class="finder__word">Ik rij een</span>
+            <label class="pick">
+              <span class="sr">Merk</span>
+              <select data-brand aria-label="Merk"></select>
+            </label>
+            <label class="pick">
+              <span class="sr">Model</span>
+              <select data-model aria-label="Model"></select>
+            </label>
+            <label class="pick">
+              <span class="sr">Chassis</span>
+              <select data-chassis aria-label="Chassis"></select>
+            </label>
+          </div>
+
+          <div class="finder__sentence" data-panel="nr" hidden>
+            <label class="finder__input">
+              <span class="sr">Artikel- of OEM-nummer</span>
+              <input type="search" placeholder="Artikel- of OEM-nummer, bv. BM215-130-Z0" autocomplete="off" spellcheck="false">
+            </label>
+          </div>
+
+          <button class="btn btn--tiger finder__go" type="submit">
+            <span data-finder-cta>Toon onderdelen</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro paper">
+      <div class="wrap intro__grid">
+        <p class="label intro__label" data-reveal>Tiger Auto Parts &middot; by TASER BV</p>
+        <h2 class="intro__statement" data-split>
+          Wij verkopen geen catalogus. Wij verkopen het onderdeel dat op <em>uw</em> wagen past, en we weten welk dat is.
+        </h2>
+      </div>
+
+      <dl class="wrap facts">
+        <div class="fact" data-reveal>
+          <dt class="fact__num"><span data-count="10000">10.000</span>+</dt>
+          <dd>onderdelen op voorraad in ons magazijn in Gent</dd>
+        </div>
+        <div class="fact" data-reveal>
+          <dt class="fact__num">0<small>dagen</small></dt>
+          <dd>wachttijd op standaard pakketten: betaald voor de cut-off, dezelfde werkdag weg</dd>
+        </div>
+        <div class="fact" data-reveal>
+          <dt class="fact__num">5<small>merken</small></dt>
+          <dd>BMW, MINI, Porsche, Volkswagen en Mercedes. Niets anders, daarom kennen we ze</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ============ GENERATIONS (pinned horizontal) ============ -->
+    <section class="gens paper" id="generaties" aria-labelledby="gens-title">
+      <div class="gens__pin" data-gens>
+        <div class="gens__head wrap">
+          <h2 class="label" id="gens-title">De 3 Serie, generatie per generatie</h2>
+          <div class="gens__progress" aria-hidden="true"><span data-gens-bar></span></div>
+          <p class="label gens__count" aria-hidden="true"><span data-gens-index>01</span> / 05</p>
+        </div>
+
+        <div class="gens__track" data-gens-track>
+          <article class="gen">
+            <p class="gen__code" aria-hidden="true">E30</p>
+            <figure class="gen__img gen__img--car"><img class="crop-r" src="assets/img/deal-e30.webp" alt="Rode BMW E30 sedan met M-Tech 2 bodykit" loading="lazy" data-gen-img></figure>
+            <div class="gen__meta">
+              <h3><span class="label">3 Serie &middot; 1982&ndash;1994</span>E30</h3>
+              <p>Bumpers, spoilers, achterlichten en complete M-Tech 2 bodykits in ABS, spuitklaar geleverd.</p>
+              <a class="link" href="#">Alle E30-onderdelen</a>
+            </div>
+          </article>
+
+          <article class="gen">
+            <p class="gen__code" aria-hidden="true">E36</p>
+            <figure class="gen__img gen__img--car"><img src="assets/img/deal-e36.webp" alt="Zilveren BMW E36 met M3 bodykit" loading="lazy" data-gen-img></figure>
+            <div class="gen__meta">
+              <h3><span class="label">3 Serie &middot; 1990&ndash;2000</span>E36</h3>
+              <p>Dubbelspijls grillen, stootlijsten in M3-stijl en de bodykits waar deze generatie om vraagt.</p>
+              <a class="link" href="#">Alle E36-onderdelen</a>
+            </div>
+          </article>
+
+          <article class="gen">
+            <p class="gen__code" aria-hidden="true">E46</p>
+            <figure class="gen__img gen__img--part"><img src="assets/img/parts/e46-koplamp.webp" alt="E46 coupé koplamp, zwart" loading="lazy" data-gen-img></figure>
+            <div class="gen__meta">
+              <h3><span class="label">3 Serie &middot; 1998&ndash;2006</span>E46</h3>
+              <p>LED-achterlichten in smoked, koplampen voor coupé en cabrio, kofferspoilers.</p>
+              <a class="link" href="#">Alle E46-onderdelen</a>
+            </div>
+          </article>
+
+          <article class="gen">
+            <p class="gen__code" aria-hidden="true">F20</p>
+            <figure class="gen__img gen__img--part gen__img--tall"><img src="assets/img/parts/f20-achterlicht.webp" alt="F20 LED-achterlicht links" loading="lazy" data-gen-img></figure>
+            <div class="gen__meta">
+              <h3><span class="label">1 Serie &middot; 2011&ndash;2019</span>F20</h3>
+              <p>LED-achterlichten die de pre-facelift een stuk jonger maken. Plug and play.</p>
+              <a class="link" href="#">Alle F20-onderdelen</a>
+            </div>
+          </article>
+
+          <article class="gen">
+            <p class="gen__code" aria-hidden="true">F30</p>
+            <figure class="gen__img gen__img--part"><img src="assets/img/parts/f30-lip.webp" alt="F30 M Performance voorbumper lip, glans zwart" loading="lazy" data-gen-img></figure>
+            <div class="gen__meta">
+              <h3><span class="label">3 Serie &middot; 2012&ndash;2019</span>F30</h3>
+              <p>M Performance lips, diffusers en spiegelkappen in glans zwart voor F30 en F31.</p>
+              <a class="link" href="#">Alle F30-onderdelen</a>
+            </div>
+          </article>
+
+          <article class="gen gen--end">
+            <p class="gen__end-title display">Ander<br>chassis?</p>
+            <p>MINI, Porsche, Volkswagen en Mercedes staan ook in het magazijn. Kies uw wagen of stuur ons het chassisnummer.</p>
+            <a class="btn btn--ink" href="#top" data-to-finder>Kies uw wagen
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STOREROOM (hover index) ============ -->
+    <section class="store night" id="magazijn" aria-labelledby="store-title">
+      <div class="wrap store__head">
+        <h2 class="display store__title" id="store-title" data-split-lines>Uit het<br>magazijn</h2>
+        <p class="store__intro" data-reveal>Een greep uit de rekken deze week. Prijzen incl. 21% btw, standaard pakketten gaan dezelfde werkdag de deur uit.</p>
+      </div>
+
+      <ol class="wrap index" data-index>
+        <li class="row" data-img="assets/img/parts/f30-lip.webp">
+          <a href="#">
+            <span class="row__code">F30</span>
+            <span class="row__name">M Performance voorbumper lip, glans zwart</span>
+            <span class="row__sku">BM215-130-Z0</span>
+            <span class="row__price">&euro;100</span>
+          </a>
+        </li>
+        <li class="row" data-img="assets/img/parts/e46-led-achterlichten.webp">
+          <a href="#">
+            <span class="row__code">E46</span>
+            <span class="row__name">LED-achterlichten smoked, set 2001&ndash;2003</span>
+            <span class="row__sku">BM107-BESE4-E</span>
+            <span class="row__price">&euro;220</span>
+          </a>
+        </li>
+        <li class="row" data-img="assets/img/parts/e30-achterbumper.webp">
+          <a href="#">
+            <span class="row__code">E30</span>
+            <span class="row__name">Achterbumper M-look type 2, sedan / coup&eacute; / cabrio</span>
+            <span class="row__sku">B A51712239866S1</span>
+            <span class="row__price">&euro;305</span>
+          </a>
+        </li>
+        <li class="row" data-img="assets/img/parts/e46-koplamp.webp">
+          <a href="#">
+            <span class="row__code">E46</span>
+            <span class="row__name">Koplamp links H7 zwart, coup&eacute; en cabrio</span>
+            <span class="row__sku">444-1126L-LDEM2</span>
+            <span class="row__price">&euro;150</span>
+          </a>
+        </li>
+        <li class="row" data-img="assets/img/parts/e30-achterlichten.webp">
+          <a href="#">
+            <span class="row__code">E30</span>
+            <span class="row__name">Achterlichten OEM-look type 2, 1987&ndash;1991</span>
+            <span class="row__sku">BM211-111-0L</span>
+            <span class="row__price">&euro;280</span>
+          </a>
+        </li>
+        <li class="row" data-img="assets/img/parts/f20-achterlicht.webp">
+          <a href="#">
+            <span class="row__code">F20</span>
+            <span class="row__name">Achterlicht links LED, 2011&ndash;2015</span>
+            <span class="row__sku">11-C246-06-2B</span>
+            <span class="row__price">&euro;150</span>
+          </a>
+        </li>
+        <li class="row" data-img="assets/img/parts/e36-grillen.webp">
+          <a href="#">
+            <span class="row__code">E36</span>
+            <span class="row__name">Dubbelspijls grillen, glanzend zwart</span>
+            <span class="row__sku">B A0363198</span>
+            <span class="row__price">&euro;25</span>
+          </a>
+        </li>
+      </ol>
+
+      <div class="wrap store__foot" data-reveal>
+        <a class="link link--light" href="#">Alle 10.000+ onderdelen</a>
+        <ul class="cats" aria-label="Categorie&euml;n">
+          <li><a href="#">Exterieur</a></li>
+          <li><a href="#">Verlichting</a></li>
+          <li><a href="#">Interieur</a></li>
+          <li><a href="#">Motor &amp; koeling</a></li>
+        </ul>
+      </div>
+
+      <div class="cursor-card" data-cursor-card aria-hidden="true"><img alt=""></div>
+    </section>
+
+    <!-- ============ DEALS ============ -->
+    <section class="deals paper" id="acties" aria-labelledby="deals-title">
+      <div class="wrap deals__head">
+        <h2 class="label" id="deals-title">Acties</h2>
+        <p class="deals__note" data-reveal>ABS kunststof &middot; zeer goede pasvorm &middot; nieuw en spuitklaar</p>
+      </div>
+
+      <div class="wrap deals__grid">
+        <article class="deal" data-reveal>
+          <figure class="deal__img"><img class="crop-r" src="assets/img/deal-e30.webp" alt="BMW E30 sedan met M-Tech 2 bodykit" loading="lazy"></figure>
+          <div class="deal__body">
+            <p class="label">E30 &middot; Sedan</p>
+            <h3 class="deal__title">Bodykit M-Tech 2</h3>
+            <p class="deal__price"><s>&euro;1.000</s><strong>&euro;900</strong></p>
+            <a class="link" href="#">Bekijk de kit</a>
+          </div>
+        </article>
+
+        <article class="deal deal--offset" data-reveal>
+          <figure class="deal__img"><img src="assets/img/deal-e36.webp" alt="BMW E36 met M3 bodykit" loading="lazy"></figure>
+          <div class="deal__body">
+            <p class="label">E36 &middot; M-Tech &amp; M3</p>
+            <h3 class="deal__title">Bodykit M-Tech &amp; M3</h3>
+            <p class="deal__price"><s>&euro;380</s><strong>&euro;350</strong></p>
+            <a class="link" href="#">Bekijk de kit</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ADVICE (clip reveal) ============ -->
+    <section class="advice" id="b2b" aria-labelledby="advice-title">
+      <div class="advice__media" data-clip>
+        <picture>
+          <source srcset="assets/img/v3/engine.webp" type="image/webp">
+          <img src="assets/img/v3/engine.jpg" alt="" loading="lazy" data-parallax>
+        </picture>
+      </div>
+      <div class="advice__inner wrap">
+        <h2 class="display advice__title" id="advice-title" data-split-lines>Twijfelt u?<br>Stuur een foto.</h2>
+        <div class="advice__cols">
+          <p data-reveal>Een foto van het oude onderdeel of uw chassisnummer is genoeg. We zoeken het op en sturen u de juiste link terug, meestal binnen het uur.</p>
+          <div class="advice__ctas" data-reveal>
+            <a class="btn btn--tiger" href="https://wa.me/32470180772">WhatsApp +32 470 18 07 72
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+          <div class="advice__b2b" data-reveal>
+            <p class="label">Garage of autobedrijf</p>
+            <p>Met een B2B-account ziet u scherpe zakelijke prijzen en zoekt u op artikel- of OEM-nummer.</p>
+            <a class="link link--light" href="#">Account aanmaken</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GENT ============ -->
+    <section class="gent night" id="gent" aria-labelledby="gent-title">
+      <div class="wrap gent__grid">
+        <div class="gent__text">
+          <p class="label" data-reveal>De toonbank</p>
+          <h2 class="display gent__title" id="gent-title" data-split-lines>Kleimoer 1B<br>Gent</h2>
+          <dl class="hours" data-reveal>
+            <div><dt>Maandag &ndash; vrijdag</dt><dd>08:00 &ndash; 17:00</dd></div>
+            <div><dt>Zaterdag</dt><dd>09:00 &ndash; 17:00</dd></div>
+            <div><dt>Zondag</dt><dd>Gesloten</dd></div>
+          </dl>
+          <a class="link link--light" href="https://maps.google.com/?q=Kleimoer+1B+9030+Gent" data-reveal>Plan uw route</a>
+        </div>
+        <figure class="gent__img" data-reveal-img>
+          <picture>
+            <source srcset="assets/img/hero-garage.webp" type="image/webp">
+            <img src="assets/img/hero-garage.jpg" alt="Drie verlaagde wagens voor de Tiger-muur in Gent" loading="lazy" data-parallax>
+          </picture>
+        </figure>
+      </div>
+
+      <div class="wrap faq">
+        <h2 class="label">Vaak gevraagd</h2>
+        <div class="faq__list">
+          <details>
+            <summary>Zijn de bodykits gespoten?<span aria-hidden="true"></span></summary>
+            <p>Nee. Bodykits worden geleverd in ABS kunststof, nieuw en spuitklaar, zodat uw carrosserie ze in de juiste kleur kan zetten.</p>
+          </details>
+          <details>
+            <summary>Hoe lang wacht ik op een bumper?<span aria-hidden="true"></span></summary>
+            <p>Standaard pakketten vertrekken dezelfde werkdag na betaling. Grote onderdelen vanaf 1,5 m duren ongeveer twee weken, maximaal drie.</p>
+          </details>
+          <details>
+            <summary>Hoe weet ik welk chassis mijn BMW heeft?<span aria-hidden="true"></span></summary>
+            <p>Het staat op uw inschrijvingsbewijs, of stuur ons uw chassisnummer via WhatsApp. We zoeken het voor u op.</p>
+          </details>
+          <details>
+            <summary>Hoe kan ik betalen?<span aria-hidden="true"></span></summary>
+            <p>Online met Bancontact, iDEAL of PayPal. Aan de toonbank in Gent ook cash.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot night">
+    <div class="wrap foot__grid">
+      <div>
+        <p class="label">Contact</p>
+        <a href="tel:+32470180772">+32 470 18 07 72</a>
+        <a href="mailto:info@tigerautoparts.be">info@tigerautoparts.be</a>
+        <a href="https://wa.me/32470180772">WhatsApp</a>
+      </div>
+      <div>
+        <p class="label">Winkel</p>
+        <a href="#">Alle onderdelen</a>
+        <a href="#">Per voertuig</a>
+        <a href="#">Acties</a>
+        <a href="#">Zoeken</a>
+      </div>
+      <div>
+        <p class="label">Account</p>
+        <a href="#">B2B login</a>
+        <a href="#">Account aanmaken</a>
+        <a href="#">Mijn bestellingen</a>
+        <a href="#">Winkelwagen</a>
+      </div>
+      <div>
+        <p class="label">Betalen</p>
+        <p>Bancontact, iDEAL, PayPal, cash aan de toonbank. Prijzen incl. 21% btw.</p>
+      </div>
+    </div>
+
+    <p class="foot__mark" aria-hidden="true" data-mark><span>T</span><span>I</span><span>G</span><span>E</span><span>R</span></p>
+
+    <div class="wrap foot__legal">
+      <p>&copy; 2026 Tiger Auto Parts by TASER BV &middot; BTW BE 0631.689.041</p>
+      <p><a href="#">Privacybeleid</a><a href="#">Cookiebeleid</a><a href="#">Retourbeleid</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

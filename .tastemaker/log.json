@@ -1,0 +1,32 @@
+[
+ {
+  "date": "2026-10-06",
+  "page": "landing",
+  "macrostructure": "Long-Scroll Narrative",
+  "nav": "N3",
+  "hero": "H3",
+  "footer": "Ft4",
+  "knobs": "hero=cinematic centered slideshow; finder=brand tabs; F=accordion + sticky deals + scrub text",
+  "brief": "Tiger Auto Parts v3 cinematic (after v2 rejection)"
+ },
+ {
+  "date": "2026-10-06",
+  "page": "landing",
+  "macrostructure": "Catalogue",
+  "nav": "N7",
+  "hero": "H2",
+  "footer": "Ft1",
+  "knobs": "hero=split/left-bias/photo-bleed-right + finder; features=F6 hairline index, F7 3-up cards; proof=P4 stats",
+  "brief": "Tiger Auto Parts v2 precision catalogue"
+ },
+ {
+  "date": "2026-10-06",
+  "page": "landing",
+  "macrostructure": "Poster Fold (inferred from v1 build)",
+  "nav": "N2",
+  "hero": "H3",
+  "footer": "Ft3",
+  "knobs": "hero=photo/full-bleed/finder docked; livery stripes, skewed decals",
+  "brief": "Tiger Auto Parts v1 livery (rejected)"
+ }
+]

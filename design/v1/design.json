@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T07:12:12+00:00",
+  "title": "Design System: Tiger Auto Parts",
+  "extensions": {
+    "colorMeta": {
+      "asphalt": {
+        "role": "neutral",
+        "displayName": "Wet Asphalt",
+        "canonical": "oklch(13.1% 0.005 51.4)",
+        "tonalRamp": [
+          "#0d0b09",
+          "#262322",
+          "#423f3d",
+          "#605d5b",
+          "#807c7b",
+          "#a19e9c",
+          "#c7c3c1",
+          "#f1eeeb"
+        ]
+      },
+      "pit": {
+        "role": "neutral",
+        "displayName": "Pit Wall",
+        "canonical": "oklch(18.0% 0.011 39.3)",
+        "tonalRamp": [
+          "#0f0a08",
+          "#292220",
+          "#453e3b",
+          "#635c59",
+          "#837b78",
+          "#a59c99",
+          "#cbc2bf",
+          "#f5ece9"
+        ]
+      },
+      "pit-2": {
+        "role": "neutral",
+        "displayName": "Pit Shadow",
+        "canonical": "oklch(22.1% 0.013 44.5)",
+        "tonalRamp": [
+          "#100a07",
+          "#2a221f",
+          "#463e3a",
+          "#645c58",
+          "#847b77",
+          "#a69c98",
+          "#ccc2be",
+          "#f6ece8"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Gasket Line",
+        "canonical": "oklch(32.1% 0.016 50.9)",
+        "tonalRamp": [
+          "#110906",
+          "#2a221d",
+          "#473e38",
+          "#655b56",
+          "#857b75",
+          "#a79c96",
+          "#cdc1bb",
+          "#f8ece5"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "oklch(96.0% 0.005 67.8)",
+        "tonalRamp": [
+          "#0d0b09",
+          "#262421",
+          "#423f3d",
+          "#605d5b",
+          "#7f7d7a",
+          "#a19e9b",
+          "#c6c3c1",
+          "#f1eeeb"
+        ]
+      },
+      "smoke": {
+        "role": "neutral",
+        "displayName": "Smoke",
+        "canonical": "oklch(74.1% 0.016 61.3)",
+        "tonalRamp": [
+          "#100a05",
+          "#2a221c",
+          "#463e37",
+          "#655c55",
+          "#857b74",
+          "#a69c94",
+          "#ccc2ba",
+          "#f7ece4"
+        ]
+      },
+      "tiger": {
+        "role": "primary",
+        "displayName": "Tiger Orange",
+        "canonical": "oklch(65.0% 0.187 44.7)",
+        "tonalRamp": [
+          "#1f0000",
+          "#421300",
+          "#692a08",
+          "#993d03",
+          "#ca5304",
+          "#f96f23",
+          "#fbb08f",
+          "#feeae1"
+        ]
+      },
+      "tiger-hot": {
+        "role": "primary",
+        "displayName": "Hot Tiger",
+        "canonical": "oklch(71.5% 0.192 46.9)",
+        "tonalRamp": [
+          "#1e0200",
+          "#3f1500",
+          "#692a01",
+          "#94420e",
+          "#c45915",
+          "#fa6f0a",
+          "#fbb08b",
+          "#feeae0"
+        ]
+      },
+      "plate": {
+        "role": "neutral",
+        "displayName": "Primer Plate",
+        "canonical": "oklch(92.1% 0.009 67.7)",
+        "tonalRamp": [
+          "#0e0a07",
+          "#272320",
+          "#433f3b",
+          "#615d58",
+          "#817c78",
+          "#a29d99",
+          "#c8c3be",
+          "#f2ede8"
+        ]
+      },
+      "on-tiger": {
+        "role": "neutral",
+        "displayName": "Asphalt on Tiger",
+        "canonical": "oklch(13.1% 0.005 51.4)",
+        "tonalRamp": [
+          "#0d0b09",
+          "#262322",
+          "#423f3d",
+          "#605d5b",
+          "#807c7b",
+          "#a19e9c",
+          "#c7c3c1",
+          "#f1eeeb"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Livery Display",
+        "purpose": "Section titles, hero headline (wdth 108%), footer sign-off. 860 italic uppercase."
+      },
+      "numeral": {
+        "displayName": "Race Numeral",
+        "purpose": "Chassis codes, prices, B2B wedge figure. 900 italic, tabular."
+      },
+      "headline": {
+        "displayName": "Card Headline",
+        "purpose": "Category names, card and timeline titles. 900 italic uppercase."
+      },
+      "title": {
+        "displayName": "Upright Title",
+        "purpose": "Product names and sentence-length section heads. 850 upright."
+      },
+      "body": {
+        "displayName": "Counter Voice",
+        "purpose": "Running copy at normal width, 42-62ch."
+      },
+      "label-decal": {
+        "displayName": "Decal Label",
+        "purpose": "Button and chip text. 800 italic uppercase."
+      },
+      "label-field": {
+        "displayName": "Field Label",
+        "purpose": "Form labels, legends, spec terms in smoke."
+      }
+    },
+    "shadows": [
+      {
+        "name": "finder-lift",
+        "value": "0 30px 60px -30px rgb(0 0 0 / 0.8)",
+        "purpose": "Docked finder over the hero photo (with 10px backdrop blur)."
+      },
+      {
+        "name": "deal-art-drop",
+        "value": "0 30px 50px -28px rgb(9 7 6 / 0.7)",
+        "purpose": "Promo artwork on the orange band."
+      },
+      {
+        "name": "plate-frame",
+        "value": "inset 0 0 0 6px var(--bone), inset 0 0 0 9px var(--asphalt), 0 18px 30px -18px rgb(0 0 0 / 0.8)",
+        "purpose": "Chassis plate inset frame plus drop."
+      },
+      {
+        "name": "decal-glow",
+        "value": "0 10px 24px -10px rgb(231 95 0 / 0.65)",
+        "purpose": "Hover on orange decal buttons."
+      },
+      {
+        "name": "field-focus",
+        "value": "0 0 0 2px var(--tiger)",
+        "purpose": "Focus ring on fields, paired with tiger border."
+      },
+      {
+        "name": "product-drop",
+        "value": "drop-shadow(0 26px 22px rgb(9 7 6 / 0.35))",
+        "purpose": "Filter on cut-out product photography on the primer stage."
+      },
+      {
+        "name": "header-glass",
+        "value": "rgb(9 7 6 / 0.86) + blur(14px) saturate(140%)",
+        "purpose": "Sticky header backdrop; solid asphalt fallback."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing; all state and entrance motion."
+      },
+      {
+        "name": "state-fast",
+        "value": "0.18s-0.25s",
+        "purpose": "Colour, border and underline transitions on controls."
+      },
+      {
+        "name": "decal-snap",
+        "value": "0.32s scale 0.94 > 1.04 > 1 under skewX(-12deg)",
+        "purpose": "Brand chip selection."
+      },
+      {
+        "name": "accelerate",
+        "value": "1.1s, wdth 62% > 108%, translateX(-48px) skewX(8deg) blur(6px) > none; line 2 +0.12s",
+        "purpose": "Signature hero headline entrance; reduced-motion gated."
+      },
+      {
+        "name": "stripe-sweep",
+        "value": "1s clip-path inset(0 100% 0 0) > inset(0); pinstripe +0.13s",
+        "purpose": "Hero seam stripe entrance; reduced-motion gated."
+      },
+      {
+        "name": "spine-fill",
+        "value": "scroll(root) linear, scaleY 0.06 > 1",
+        "purpose": "Bone core of the spine as scroll progress; reduced-motion and support gated."
+      },
+      {
+        "name": "image-zoom",
+        "value": "0.6s-0.8s scale 1.03-1.04",
+        "purpose": "Photo hover on deal and category cards."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "767px"
+      },
+      {
+        "name": "tablet",
+        "value": "1023px"
+      },
+      {
+        "name": "spine-thin",
+        "value": "1099px"
+      },
+      {
+        "name": "laptop",
+        "value": "1180px"
+      },
+      {
+        "name": "finder-wide",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Decal Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Tiger-orange slanted decal for the main action (Toon onderdelen, Bekijk, WhatsApp advies).",
+      "html": "<button class=\"ds-btn\" type=\"button\"><span>Toon onderdelen</span></button>",
+      "css": ".ds-btn { font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px; background: var(--tiger, #e75f00); color: var(--on-tiger, #090706); border: 0; border-radius: 0; cursor: pointer; white-space: nowrap; font-weight: 800; font-style: italic; font-stretch: 112%; text-transform: uppercase; letter-spacing: 0.01em; font-size: 0.95rem; transform: skewX(-12deg); transition: background-color 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), transform 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), box-shadow 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn > span { display: inline-flex; align-items: center; gap: 10px; transform: skewX(12deg); } .ds-btn:hover { background: var(--tiger-hot, #ff7417); box-shadow: 0 10px 24px -10px rgb(231 95 0 / 0.65); } .ds-btn:active { transform: skewX(-12deg) translateY(1px) scale(0.98); } .ds-btn:focus-visible { outline: 3px solid var(--tiger, #e75f00); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Decal Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Asphalt decal for actions placed on the drenched orange band.",
+      "html": "<div class=\"ds-band\"><button class=\"ds-btn-ink\" type=\"button\"><span>Bekijk actie</span></button></div>",
+      "css": ".ds-band { background: var(--tiger, #e75f00); padding: 24px; } .ds-btn-ink { font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 26px; background: var(--asphalt, #090706); color: var(--bone, #f4f1ee); border: 0; border-radius: 0; cursor: pointer; font-weight: 800; font-style: italic; font-stretch: 112%; text-transform: uppercase; letter-spacing: 0.01em; font-size: 0.95rem; transform: skewX(-12deg); transition: background-color 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), box-shadow 0.2s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-btn-ink > span { display: inline-flex; transform: skewX(12deg); } .ds-btn-ink:hover { background: var(--pit-2, #201916); box-shadow: 0 10px 24px -12px rgb(9 7 6 / 0.7); } .ds-btn-ink:focus-visible { outline: 3px solid var(--on-tiger, #090706); outline-offset: 3px; }"
+    },
+    {
+      "name": "Brand Chip",
+      "kind": "chip",
+      "refersTo": "chip-brand",
+      "description": "Radio decal for picking a car brand in the finder; snaps orange when selected.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-merk\" checked><span>BMW</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-merk\"><span>MINI</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-merk\"><span>Porsche</span></label></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; background: var(--pit, #16100e); padding: 20px; } .ds-chip { position: relative; cursor: pointer; font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); } .ds-chip input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; } .ds-chip span { display: inline-flex; align-items: center; min-height: 42px; padding: 0 16px; border: 1px solid var(--line, #3a312c); background: var(--asphalt, #090706); color: var(--bone, #f4f1ee); font-weight: 800; font-style: italic; font-stretch: 108%; text-transform: uppercase; font-size: 0.85rem; transform: skewX(-12deg); transition: background-color 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), border-color 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), color 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-chip:hover span { border-color: var(--smoke, #b3a9a1); } .ds-chip input:checked + span { background: var(--tiger, #e75f00); border-color: var(--tiger, #e75f00); color: var(--on-tiger, #090706); } .ds-chip input:focus-visible + span { outline: 3px solid var(--bone, #f4f1ee); outline-offset: 3px; }"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Square asphalt field with smoke label; tiger border and ring on focus.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-q\">Artikel- of OEM-nummer</label><input id=\"ds-q\" type=\"search\" placeholder=\"bv. BM215-130-Z0\"></div>",
+      "css": ".ds-field { display: grid; gap: 7px; font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); background: var(--pit, #16100e); padding: 20px; } .ds-field label { font-size: 0.85rem; font-weight: 700; color: var(--smoke, #b3a9a1); } .ds-field input { font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); width: 100%; min-height: 52px; padding: 0 14px; background: var(--asphalt, #090706); color: var(--bone, #f4f1ee); border: 1px solid var(--line, #3a312c); border-radius: 0; font-size: 1rem; font-weight: 600; transition: border-color 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-field input:hover { border-color: var(--smoke, #b3a9a1); } .ds-field input:focus-visible { outline: 0; border-color: var(--tiger, #e75f00); box-shadow: 0 0 0 2px var(--tiger, #e75f00); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Upright nav links on the glass header; a slanted orange bar wipes in on hover.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Onderdelen</a><a href=\"#\">Per voertuig</a><a href=\"#\">Acties</a><a href=\"#\">Klantenservice</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 6px; background: rgb(9 7 6 / 0.86); padding: 16px; font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); } .ds-nav a { position: relative; display: block; padding: 10px 14px; color: var(--bone, #f4f1ee); text-decoration: none; font-weight: 700; font-stretch: 108%; font-size: 0.98rem; } .ds-nav a::after { content: ''; position: absolute; left: 14px; right: 14px; bottom: 4px; height: 3px; background: var(--tiger, #e75f00); transform: skewX(-12deg) scaleX(0); transform-origin: left; transition: transform 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-nav a:hover::after { transform: skewX(-12deg) scaleX(1); } .ds-nav a:focus-visible { outline: 3px solid var(--tiger, #e75f00); outline-offset: 3px; }"
+    },
+    {
+      "name": "Chassis Plate",
+      "kind": "custom",
+      "refersTo": "chassis-plate",
+      "description": "Bone race-number board, skewed -8deg with inset asphalt frame and orange foot bar; turns tiger on hover.",
+      "html": "<a class=\"ds-plate\" href=\"#\"><span class=\"ds-plate__code\">E30</span><span class=\"ds-plate__meta\">3 Serie <span>1982-1994</span></span></a>",
+      "css": ".ds-plate { font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); position: relative; overflow: hidden; display: grid; gap: 4px; width: 220px; min-height: 200px; padding: 24px 24px 30px; text-decoration: none; background: var(--bone, #f4f1ee); color: var(--asphalt, #090706); box-shadow: inset 0 0 0 6px var(--bone, #f4f1ee), inset 0 0 0 9px var(--asphalt, #090706), 0 18px 30px -18px rgb(0 0 0 / 0.8); transform: skewX(-8deg); transition: background-color 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), transform 0.25s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-plate > * { transform: skewX(8deg); } .ds-plate::after { content: ''; position: absolute; left: 9px; right: 9px; bottom: 9px; height: 10px; background: var(--tiger, #e75f00); } .ds-plate__code { font-size: 4rem; font-weight: 900; font-style: italic; font-stretch: 125%; line-height: 0.95; letter-spacing: -0.03em; } .ds-plate__meta { margin-top: 10px; font-weight: 800; display: flex; justify-content: space-between; gap: 8px; } .ds-plate__meta span { font-weight: 600; font-variant-numeric: tabular-nums; } .ds-plate:hover { background: var(--tiger, #e75f00); box-shadow: inset 0 0 0 6px var(--tiger, #e75f00), inset 0 0 0 9px var(--asphalt, #090706), 0 18px 30px -18px rgb(0 0 0 / 0.8); transform: skewX(-8deg) translateY(-4px); } .ds-plate:hover::after { background: var(--asphalt, #090706); } .ds-plate:focus-visible { outline: 3px solid var(--tiger, #e75f00); outline-offset: 5px; }"
+    },
+    {
+      "name": "Category Card",
+      "kind": "card",
+      "refersTo": "card-category",
+      "description": "Square pit card with a photo under an asphalt scrim, headline name and square tags.",
+      "html": "<article class=\"ds-cat\"><div class=\"ds-cat__body\"><h3 class=\"ds-cat__name\"><a href=\"#\">Exterieur</a></h3><div class=\"ds-tags\"><a href=\"#\">Bumpers</a><a href=\"#\">Spoilers</a><a href=\"#\">Grillen</a></div></div></article>",
+      "css": ".ds-cat { font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); position: relative; display: flex; align-items: flex-end; min-height: 280px; background: linear-gradient(0deg, rgb(9 7 6 / 0.95) 0%, rgb(9 7 6 / 0.55) 45%, rgb(9 7 6 / 0.05) 100%), var(--pit-2, #201916); color: var(--bone, #f4f1ee); } .ds-cat__body { padding: 26px; display: grid; gap: 14px; } .ds-cat__name { margin: 0; font-size: 2rem; font-weight: 900; font-style: italic; font-stretch: 120%; text-transform: uppercase; line-height: 1; } .ds-cat__name a { color: inherit; text-decoration: none; } .ds-cat__name a:hover { color: var(--tiger, #e75f00); } .ds-tags { display: flex; flex-wrap: wrap; gap: 6px; } .ds-tags a { padding: 6px 11px; font-size: 0.85rem; font-weight: 700; color: var(--bone, #f4f1ee); text-decoration: none; background: rgb(9 7 6 / 0.7); border: 1px solid var(--line, #3a312c); transition: background-color 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), color 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)), border-color 0.18s var(--ease-out, cubic-bezier(0.16, 1, 0.3, 1)); } .ds-tags a:hover { background: var(--tiger, #e75f00); border-color: var(--tiger, #e75f00); color: var(--on-tiger, #090706); } .ds-tags a:focus-visible, .ds-cat__name a:focus-visible { outline: 3px solid var(--tiger, #e75f00); outline-offset: 3px; }"
+    },
+    {
+      "name": "Deal Price",
+      "kind": "custom",
+      "refersTo": "deal-price",
+      "description": "Drenched orange band with the price set in expanded italic numerals and the old price struck.",
+      "html": "<div class=\"ds-deal\"><p class=\"ds-deal__name\">BMW E30 bodykit M-Tech 2 sedan</p><p class=\"ds-deal__price\"><span class=\"ds-deal__now\">&euro;900</span><s>&euro;1.000</s></p></div>",
+      "css": ".ds-deal { font-family: var(--font, 'Archivo', 'Arial Narrow', system-ui, sans-serif); background: var(--tiger, #e75f00); color: var(--on-tiger, #090706); padding: 28px; display: grid; gap: 6px; } .ds-deal__name { margin: 0; font-size: 1.25rem; font-weight: 800; font-stretch: 105%; line-height: 1.2; } .ds-deal__price { margin: 0; display: flex; align-items: baseline; gap: 12px; font-variant-numeric: tabular-nums; } .ds-deal__now { font-size: 4rem; font-weight: 900; font-style: italic; font-stretch: 120%; line-height: 1; letter-spacing: -0.02em; } .ds-deal__price s { font-weight: 700; font-size: 1.1rem; opacity: 0.85; text-decoration-thickness: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Livery",
+    "overview": "The site is dressed like a race car. A wet-asphalt ground carries bone lettering, and a single committed tiger-orange stripe runs the length of the page as a fixed spine, cuts across the hero seam, and floods whole sections when a deal needs to shout. Everything a hand touches is a decal: a parallelogram cut at a fixed slant, its lettering held upright inside. Everything that holds content is a square-cornered panel, like a pit wall or a workshop board.\n\nDensity is shop-counter practical rather than editorial: real photography of the cars, real prices set large in expanded italic numerals, fitment data in tabular figures. One typeface, Archivo variable, does all the work by moving along its width axis; expanded black italic uppercase is the livery lettering, normal width is the voice at the counter. The page is dark-locked; there is no light theme.\n\nMotion is spent once. On load the hero headline accelerates from condensed to expanded while the stripe sweeps in; after that, state changes are short eases and the brand chips snap like decals. With reduced motion requested, all of it stops and the page arrives settled.",
+    "keyCharacteristics": [
+      "Dark-locked asphalt ground with pit-wall panels and bone type.",
+      "Tiger orange as a committed field colour (spine, seam stripe, drenched deals band, footer rule), not a sprinkle.",
+      "One family, Archivo variable, contrast carried by width, weight and italic.",
+      "Controls are slanted decals (-12deg) with upright content; containers are square.",
+      "Chassis plates as bone race-number boards.",
+      "One signature motion; reduced motion fully respected."
+    ],
+    "rules": [
+      {
+        "name": "The Committed Field Rule",
+        "body": "Orange is applied as surface (stripe, band, wedge, fill), not as thin tinting of neutral elements. When a section needs emphasis it goes fully orange with asphalt text; it does not get an orange border.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dark Lock Rule",
+        "body": "Asphalt is the ground at every width. Light surfaces exist only as objects sitting on it: bone plates, decal codes and the primer product stage.",
+        "section": "colors"
+      },
+      {
+        "name": "The Width Axis Rule",
+        "body": "Hierarchy is made by moving wdth, weight and italic within Archivo, never by adding a second family. Expanded italic uppercase is for livery moments (display, numerals, decals); anything a visitor must read in sentences stays upright at normal width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Fitment Rule",
+        "body": "Prices, chassis years, counts and hours use tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lift Not Line Rule",
+        "body": "Shadows are diffuse and negative-spread so they read as an object sitting off the ground. No hard offset shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Glass Header Rule",
+        "body": "The sticky header is the one translucent surface: asphalt at 86% with blur(14px) saturate(140%), falling back to solid asphalt.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Decal Rule",
+        "body": "If you can press it, it is slanted at -12deg and its label stays upright. If it only holds content, it is square.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do keep asphalt as the ground at every width and lift panels with pit, not with lighter greys.",
+      "Do apply tiger orange as a field (stripe, band, wedge, fill) and put asphalt text on it.",
+      "Do skew every pressable control at -12deg and counter-skew its content upright.",
+      "Do keep every container square-cornered (0 radius).",
+      "Do set prices and chassis codes in 900 italic expanded Archivo with tabular figures.",
+      "Do carry the spine at the left of the content column through every section.",
+      "Do gate any motion beyond short state eases behind prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't introduce a second typeface; reach for Archivo's width axis instead.",
+      "Don't round corners on panels, fields, cards, tags or images.",
+      "Don't use hard offset shadows; lifts are diffuse and negative-spread.",
+      "Don't spend a second signature animation; the hero acceleration is the only load choreography.",
+      "Don't set long reading copy in expanded italic uppercase.",
+      "Don't add a light theme or a white page section."
+    ]
+  }
+}
